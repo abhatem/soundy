@@ -1,0 +1,3 @@
+/home/abo0ody/workspace/opencv/portaudio/build/CMakeFiles/TestAudio.dir
+/home/abo0ody/workspace/opencv/portaudio/build/CMakeFiles/TestColorTracker.dir
+/home/abo0ody/workspace/opencv/portaudio/build/CMakeFiles/soundy.dir
