@@ -1,5 +1,12 @@
 soundy
 ======
 
-A simple c++ application that reads video input from webcam to a specified color and play a sound relative to it's position.
-It depends on OpenCV and portaudio
+A simple c++ application that reads video input from a webcam to detect a specified color then plays a sound relative to it's position.
+It depends on OpenCV and portaudio.
+
+cmake is used for building the project.
+
+TODO:
+add comments
+add config options
+create a nice GUI for the app
