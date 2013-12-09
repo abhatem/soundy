@@ -6,7 +6,7 @@ It depends on OpenCV and portaudio.
 
 cmake is used for building the project.
 
-TODO:
-add comments
-add config options
-create a nice GUI for the app
+TODO: <br>
+add comments. <br>
+add config options. <br>
+create a nice GUI for the app.
