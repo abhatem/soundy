@@ -1,0 +1,18 @@
+#include <iostream>
+#include "soundy.h"
+#include "audio.h"
+int main(int argc, char *argv[])
+{
+  //Pa_Initialize();
+  
+  soundy::Sound::audio a;
+    
+  a.playSound();
+  // Pa_Sleep(1200);
+  // a.playSound(2000, 1, 1);
+  // Pa_Sleep(2500);
+  //Pa_Initialize();
+  //std::cout << "All clear " << std::endl;
+  
+  return 0;
+}

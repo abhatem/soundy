@@ -1,0 +1,11 @@
+namespace soundy {
+
+  namespace VP {
+    class ColorTracker;
+  }
+
+  namespace Sound {
+    class 
+  }
+
+}
