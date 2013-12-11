@@ -127,6 +127,7 @@ TestAudio: /usr/local/lib/libopencv_superres.so
 TestAudio: /usr/local/lib/libopencv_ts.so
 TestAudio: /usr/local/lib/libopencv_video.so
 TestAudio: /usr/local/lib/libopencv_videostab.so
+TestAudio: /usr/local/lib/libconfig.so
 TestAudio: CMakeFiles/TestAudio.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable TestAudio"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TestAudio.dir/link.txt --verbose=$(VERBOSE)

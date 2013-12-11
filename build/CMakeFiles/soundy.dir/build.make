@@ -152,6 +152,7 @@ soundy: /usr/local/lib/libopencv_superres.so
 soundy: /usr/local/lib/libopencv_ts.so
 soundy: /usr/local/lib/libopencv_video.so
 soundy: /usr/local/lib/libopencv_videostab.so
+soundy: /usr/local/lib/libconfig.so
 soundy: CMakeFiles/soundy.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable soundy"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/soundy.dir/link.txt --verbose=$(VERBOSE)

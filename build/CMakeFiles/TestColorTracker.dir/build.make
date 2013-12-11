@@ -127,6 +127,7 @@ TestColorTracker: /usr/local/lib/libopencv_superres.so
 TestColorTracker: /usr/local/lib/libopencv_ts.so
 TestColorTracker: /usr/local/lib/libopencv_video.so
 TestColorTracker: /usr/local/lib/libopencv_videostab.so
+TestColorTracker: /usr/local/lib/libconfig.so
 TestColorTracker: CMakeFiles/TestColorTracker.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable TestColorTracker"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TestColorTracker.dir/link.txt --verbose=$(VERBOSE)

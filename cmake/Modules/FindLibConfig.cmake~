@@ -11,8 +11,6 @@
 
 #MESSAGE("Searching for libconfig library")
 
-# Taken from https://code.google.com/p/python-libconfig/source/browse/cmake/FindLibConfig.cmake?r=93abd6fea422f3d61b27bcc34188e15880dca478
-#================================================
 FIND_PATH(LIBCONFIG_INCLUDE_DIR libconfig.h
   /usr/local/include
   /usr/include
