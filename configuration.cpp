@@ -55,6 +55,7 @@ bool soundy::Config::configuration::writeConfig()
     configOutputStream << _cp.highS << "\n";
     configOutputStream << _cp.lowV << "\n";
     configOutputStream << _cp.highV << "\n";
+    configOutputStream.close();
   } else {
     std::cout << "Unable to open configuration for output."
 	      << std::endl;
