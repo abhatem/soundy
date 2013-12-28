@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: duration
+# key: duration
+# type: command
+# --
+
+	    // you have to #include <chrono>
+auto startTime = std::chrono::system_clock::now();
+// some code to test the time it runs in.
+auto endTime = std::chrono::system_clock::now();

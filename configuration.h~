@@ -1,0 +1,39 @@
+#ifndef CONFIGURATION_H
+#define CONFIGURATION_H
+
+#include "soundy.h"
+#include <fstream>
+class soundy::Config::configuration // this calss is used as a singleton
+{
+ public:
+  bool readConfig(); 
+  bool writeConfig(); // this funciton will also be called everytime
+                      // cp changes
+  
+  //setters
+  void setConfig(configParams cp) {_cp = cp;}
+  void setLowH(int lowH) {_cp.lowH = lowH;}
+  void setHighH(int highH) {_cp.highH = highH;}
+  void setLowS(int lowS) {_cp.lowS = lowS;}
+  void setHighS(int highS) {_cp.highS = highS;}
+  void setlowV(int lowV) {_cp.lowV = lowV;}
+  void setHighV(int highV) {_cp.highV = highV;}
+  // getters
+  configParams cp() {return _cp;}
+  int lowH() {return _cp.lowH;}
+  int highH() {return _cp.highH;}
+  int lowS() {return _cp.lowS;}
+  int highS() {return _cp.highS;}
+  int lowV() {return _cp.lowV;}
+  int highV() {return _cp.highV;}
+  
+ private:
+  configParams _cp;
+  std::ifstream configInputStream;
+  std::ofstream configOutputStream;
+  
+  const std::string configFileName = "config.cfg";
+
+};
+
+#endif //CONFIGURATION_H

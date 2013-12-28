@@ -1,39 +1,62 @@
-#include <iostream>
-#include "soundy.h"
-#include "audio.h"
-#include "colortracker.h"
-int main(int argc, char *argv[])
+#include "app.h"
+
+int soundy::app::run()
 {
-  sColorTracker::Instance()->setLowH(160);
-  sColorTracker::Instance()->setHighH(180);
-  sColorTracker::Instance()->setLowS(100);
-  sColorTracker::Instance()->setHighS(255);
-  sColorTracker::Instance()->setLowV(100);
-  sColorTracker::Instance()->setHighV(255);
-  bool play = true;
-  int c = 0;
+  sColorTracker::Instance()->setLowH(sConfig::Instance()->lowH());
+  sColorTracker::Instance()->setHighH(sConfig::Instance()->highH());
+  sColorTracker::Instance()->setLowS(sConfig::Instance()->lowS());
+  sColorTracker::Instance()->setHighS(sConfig::Instance()->highS());
+  sColorTracker::Instance()->setLowV(sConfig::Instance()->lowV());
+  sColorTracker::Instance()->setHighV(sConfig::Instance()->highV());
+  soundy::GUI::mainWindow mainWin;
+  soundy::GUI::configWindow configWin;
+  bool play = false;
   cv::Point p;
-  cv::imread("shit.jpg");
   sAudio::Instance()->initSound();
+  cv::Mat frame_err;
+  frame_err = cv::imread("frame_err.png");
   while(true){
     p = sColorTracker::Instance()->ColorPos();
-    sAudio::Instance()->playSound(p.y/75, p.y/75);
-   
-    //Pa_Sleep(20);
-    // int c = cv::waitKey(30);
-    // std::cout << c << std::endl;
-    // if(c==32){
-    //   sAudio::Instance()->playSound(0, 0);
-    //   play = !play;
-    //   std::cout << "altered" << std::endl;
-    // }
-    //Pa_Sleep(10);
-    //std::getline(std::cin, c);
-    c = cv::waitKey(33);
-    if(c==65) break;
-    if(c==27) break;
-    std::cout << c << std::endl;
-    //if((char)c == 27) break;
+    
+    if(play)
+      sAudio::Instance()->playSound(p.y/60, p.y/60);
+
+    if(!sColorTracker::Instance()->frame().empty()) {
+	mainWin.show(sColorTracker::Instance()->frame(), p.x, p.y);
+    } else {
+      mainWin.show(frame_err);
+    }
+    if(sConfig::Instance()->configMode()) configWin.show();
+    int c = cv::waitKey(10);
+    if ((char)c == 27) break;
+    if ((char)c == 32){
+      play = !play;
+      if(!play) sAudio::Instance()->playSound(0, 0);
+      if(DEBUG && play) std::cout << "playing." << std::endl; // if debuging and play is set to true
+      if(DEBUG && !play) std::cout << "stop playing." << std::endl; // if debuging and play is set to false11
+    }
+    if ((char)c == 67 || (char)c == 99){
+      sConfig::Instance()->setConfigMode(!sConfig::Instance()->configMode());
+    }
   }
   return 0;
+}
+
+soundy::app::app()
+{
+  if(!sConfig::Instance()->readConfig()) {
+    cv::namedWindow("error");
+    cv::Mat err_img(640, 480, CV_8UC3, cv::Scalar::all(255));
+    cv::putText(err_img, "Error reading configuration.",
+		cv::Point(240, 180), CV_FONT_HERSHEY_COMPLEX,
+		0.6, cv::Scalar::all(0), 1, 8);
+    cv::imshow("error", err_img);
+  }
+  _loadingError = true;
+}
+  
+int main(int argc, char *argv[])
+{
+  soundy::app application;
+  return application.run();
 }

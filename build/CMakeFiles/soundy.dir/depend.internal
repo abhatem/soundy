@@ -3,9 +3,13 @@
 
 CMakeFiles/soundy.dir/app.cpp.o
  /home/abo0ody/workspace/opencv/portaudio/app.cpp
+ /home/abo0ody/workspace/opencv/portaudio/app.h
  /home/abo0ody/workspace/opencv/portaudio/audio.h
  /home/abo0ody/workspace/opencv/portaudio/colortracker.h
  /home/abo0ody/workspace/opencv/portaudio/config.h
+ /home/abo0ody/workspace/opencv/portaudio/configuration.h
+ /home/abo0ody/workspace/opencv/portaudio/configwindow.h
+ /home/abo0ody/workspace/opencv/portaudio/mainwindow.h
  /home/abo0ody/workspace/opencv/portaudio/singleton.hpp
  /home/abo0ody/workspace/opencv/portaudio/soundy.h
  /usr/local/include/opencv2/calib3d/calib3d.hpp
@@ -72,6 +76,107 @@ CMakeFiles/soundy.dir/colortracker.cpp.o
  /home/abo0ody/workspace/opencv/portaudio/colortracker.cpp
  /home/abo0ody/workspace/opencv/portaudio/colortracker.h
  /home/abo0ody/workspace/opencv/portaudio/config.h
+ /home/abo0ody/workspace/opencv/portaudio/singleton.hpp
+ /home/abo0ody/workspace/opencv/portaudio/soundy.h
+ /usr/local/include/opencv2/calib3d/calib3d.hpp
+ /usr/local/include/opencv2/contrib/contrib.hpp
+ /usr/local/include/opencv2/contrib/openfabmap.hpp
+ /usr/local/include/opencv2/contrib/retina.hpp
+ /usr/local/include/opencv2/core/core.hpp
+ /usr/local/include/opencv2/core/core_c.h
+ /usr/local/include/opencv2/core/mat.hpp
+ /usr/local/include/opencv2/core/operations.hpp
+ /usr/local/include/opencv2/core/types_c.h
+ /usr/local/include/opencv2/core/version.hpp
+ /usr/local/include/opencv2/features2d/features2d.hpp
+ /usr/local/include/opencv2/flann/defines.h
+ /usr/local/include/opencv2/flann/miniflann.hpp
+ /usr/local/include/opencv2/highgui/highgui.hpp
+ /usr/local/include/opencv2/highgui/highgui_c.h
+ /usr/local/include/opencv2/imgproc/imgproc.hpp
+ /usr/local/include/opencv2/imgproc/imgproc_c.h
+ /usr/local/include/opencv2/imgproc/types_c.h
+ /usr/local/include/opencv2/ml/ml.hpp
+ /usr/local/include/opencv2/objdetect/objdetect.hpp
+ /usr/local/include/opencv2/opencv.hpp
+ /usr/local/include/opencv2/photo/photo.hpp
+ /usr/local/include/opencv2/photo/photo_c.h
+ /usr/local/include/opencv2/video/background_segm.hpp
+ /usr/local/include/opencv2/video/tracking.hpp
+ /usr/local/include/opencv2/video/video.hpp
+ /usr/local/include/portaudio.h
+CMakeFiles/soundy.dir/configuration.cpp.o
+ /home/abo0ody/workspace/opencv/portaudio/config.h
+ /home/abo0ody/workspace/opencv/portaudio/configuration.cpp
+ /home/abo0ody/workspace/opencv/portaudio/configuration.h
+ /home/abo0ody/workspace/opencv/portaudio/singleton.hpp
+ /home/abo0ody/workspace/opencv/portaudio/soundy.h
+ /usr/local/include/opencv2/calib3d/calib3d.hpp
+ /usr/local/include/opencv2/contrib/contrib.hpp
+ /usr/local/include/opencv2/contrib/openfabmap.hpp
+ /usr/local/include/opencv2/contrib/retina.hpp
+ /usr/local/include/opencv2/core/core.hpp
+ /usr/local/include/opencv2/core/core_c.h
+ /usr/local/include/opencv2/core/mat.hpp
+ /usr/local/include/opencv2/core/operations.hpp
+ /usr/local/include/opencv2/core/types_c.h
+ /usr/local/include/opencv2/core/version.hpp
+ /usr/local/include/opencv2/features2d/features2d.hpp
+ /usr/local/include/opencv2/flann/defines.h
+ /usr/local/include/opencv2/flann/miniflann.hpp
+ /usr/local/include/opencv2/highgui/highgui.hpp
+ /usr/local/include/opencv2/highgui/highgui_c.h
+ /usr/local/include/opencv2/imgproc/imgproc.hpp
+ /usr/local/include/opencv2/imgproc/imgproc_c.h
+ /usr/local/include/opencv2/imgproc/types_c.h
+ /usr/local/include/opencv2/ml/ml.hpp
+ /usr/local/include/opencv2/objdetect/objdetect.hpp
+ /usr/local/include/opencv2/opencv.hpp
+ /usr/local/include/opencv2/photo/photo.hpp
+ /usr/local/include/opencv2/photo/photo_c.h
+ /usr/local/include/opencv2/video/background_segm.hpp
+ /usr/local/include/opencv2/video/tracking.hpp
+ /usr/local/include/opencv2/video/video.hpp
+ /usr/local/include/portaudio.h
+CMakeFiles/soundy.dir/configwindow.cpp.o
+ /home/abo0ody/workspace/opencv/portaudio/colortracker.h
+ /home/abo0ody/workspace/opencv/portaudio/config.h
+ /home/abo0ody/workspace/opencv/portaudio/configuration.h
+ /home/abo0ody/workspace/opencv/portaudio/configwindow.cpp
+ /home/abo0ody/workspace/opencv/portaudio/configwindow.h
+ /home/abo0ody/workspace/opencv/portaudio/singleton.hpp
+ /home/abo0ody/workspace/opencv/portaudio/soundy.h
+ /usr/local/include/opencv2/calib3d/calib3d.hpp
+ /usr/local/include/opencv2/contrib/contrib.hpp
+ /usr/local/include/opencv2/contrib/openfabmap.hpp
+ /usr/local/include/opencv2/contrib/retina.hpp
+ /usr/local/include/opencv2/core/core.hpp
+ /usr/local/include/opencv2/core/core_c.h
+ /usr/local/include/opencv2/core/mat.hpp
+ /usr/local/include/opencv2/core/operations.hpp
+ /usr/local/include/opencv2/core/types_c.h
+ /usr/local/include/opencv2/core/version.hpp
+ /usr/local/include/opencv2/features2d/features2d.hpp
+ /usr/local/include/opencv2/flann/defines.h
+ /usr/local/include/opencv2/flann/miniflann.hpp
+ /usr/local/include/opencv2/highgui/highgui.hpp
+ /usr/local/include/opencv2/highgui/highgui_c.h
+ /usr/local/include/opencv2/imgproc/imgproc.hpp
+ /usr/local/include/opencv2/imgproc/imgproc_c.h
+ /usr/local/include/opencv2/imgproc/types_c.h
+ /usr/local/include/opencv2/ml/ml.hpp
+ /usr/local/include/opencv2/objdetect/objdetect.hpp
+ /usr/local/include/opencv2/opencv.hpp
+ /usr/local/include/opencv2/photo/photo.hpp
+ /usr/local/include/opencv2/photo/photo_c.h
+ /usr/local/include/opencv2/video/background_segm.hpp
+ /usr/local/include/opencv2/video/tracking.hpp
+ /usr/local/include/opencv2/video/video.hpp
+ /usr/local/include/portaudio.h
+CMakeFiles/soundy.dir/mainwindow.cpp.o
+ /home/abo0ody/workspace/opencv/portaudio/config.h
+ /home/abo0ody/workspace/opencv/portaudio/mainwindow.cpp
+ /home/abo0ody/workspace/opencv/portaudio/mainwindow.h
  /home/abo0ody/workspace/opencv/portaudio/singleton.hpp
  /home/abo0ody/workspace/opencv/portaudio/soundy.h
  /usr/local/include/opencv2/calib3d/calib3d.hpp

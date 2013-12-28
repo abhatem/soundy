@@ -6,7 +6,7 @@ find_package(OpenCV REQUIRED)
 find_package(portaudio REQUIRED)
 find_package(LibConfig REQUIRED)
 
-set(CMAKE_CXX_FLAGS "-g -Wall")
+set(CMAKE_CXX_FLAGS "-std=c++11 -g -Wall")
 #set(LibConfig_FIND_QUIETLY FALSE)
 
 IF(NOT PORTAUDIO_FOUND)
@@ -20,7 +20,9 @@ set(LIBS ${PORTAUDIO_LIBRARIES} ${OpenCV_LIBS} ${LIBCONFIG_LIBRARIES})
 
 add_executable(TestAudio audio.cpp TestAudio.cpp)
 add_executable(TestColorTracker TestColorTracker.cpp colortracker.cpp)
-add_executable(soundy app.cpp audio.cpp colortracker.cpp)
+add_executable(soundy app.cpp audio.cpp colortracker.cpp mainwindow.cpp configwindow.cpp configuration.cpp)
 target_link_libraries(TestColorTracker ${LIBS})
 target_link_libraries(TestAudio ${LIBS})
 target_link_libraries(soundy ${LIBS})
+
+install(TARGETS soundy DESTINATION bin)

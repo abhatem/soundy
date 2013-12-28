@@ -1,5 +1,10 @@
 #include "audio.h"
 
+//extern int soundy::Sound::audio::left_increment;
+//extern int soundy::Sound::audio::right_increment;
+//soundy::Sound::audio::left_increment = 0;
+//soundy::Sound::audio::right_increment = 0;
+
 static int paCallback(const void *inputBuffer,
 		      void *outputBuffer,
 		      unsigned long framesPerBuffer,
@@ -7,7 +12,7 @@ static int paCallback(const void *inputBuffer,
 		      PaStreamCallbackFlags statusFlags,
 		      void *userData)
 {
-  paData *data = (paData*)userData;
+  soundy::Sound::paData *data = (soundy::Sound::paData*)userData;
   float *out = (float*) outputBuffer;
   unsigned long i;
 
@@ -20,8 +25,10 @@ static int paCallback(const void *inputBuffer,
       *out++ = data->sine[data->left_phase];
       *out++ = data->sine[data->right_phase];
       data->left_phase += data->left_inc;
+	//data->left_inc
       if(data->left_phase >= TABLE_SIZE) data->left_phase -= TABLE_SIZE;
       data->right_phase += data->right_inc;
+	//data->right_inc;
       if(data->right_phase >= TABLE_SIZE) data->right_phase -= TABLE_SIZE;
     }
   return paContinue;
@@ -37,8 +44,8 @@ soundy::Sound::audio::audio()
   for(int i=0; i<TABLE_SIZE; i++){
     _data.sine[i] = (float) sin( ((double)i/(double)TABLE_SIZE) * M_PI * 2. );
   }
-
   _data.left_phase = _data.right_phase = 0;
+  _data.left_inc = _data.right_inc = 0;
   _err = Pa_Initialize();
   if(_err != paNoError) reportError();
 
@@ -62,6 +69,7 @@ soundy::Sound::audio::audio()
 			 paClipOff,
 			 paCallback,
 			 &_data);
+    //Pa_OpenStream(PaStream **stream, const PaStreamParameters *inputParameters, const PaStreamParameters *outputParameters, double sampleRate, unsigned long framesPerBuffer, PaStreamFlags streamFlags, PaStreamCallback *streamCallback, void *userData)
     if( _err != paNoError ) reportError();
 
     _err = Pa_SetStreamFinishedCallback(_stream, &StreamFinished);
@@ -77,14 +85,12 @@ void soundy::Sound::audio::reportError()
 
   std::cerr << "Error number: " << _err << std::endl;
   std::cerr << "Error message: " << Pa_GetErrorText(_err) << std::endl;
-  
 }
 
 void soundy::Sound::audio::playSound(int left_inc, int right_inc)
 {
-  _data.left_inc = left_inc;
-  _data.right_inc = right_inc;
-  //Pa_Sleep(50);
+  _data.left_inc = left_inc; // should be left_inc
+  _data.right_inc = right_inc; // should be right_inc
 }
 
 void soundy::Sound::audio::initSound()

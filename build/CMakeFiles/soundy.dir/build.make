@@ -121,11 +121,83 @@ CMakeFiles/soundy.dir/colortracker.cpp.o.provides: CMakeFiles/soundy.dir/colortr
 
 CMakeFiles/soundy.dir/colortracker.cpp.o.provides.build: CMakeFiles/soundy.dir/colortracker.cpp.o
 
+CMakeFiles/soundy.dir/mainwindow.cpp.o: CMakeFiles/soundy.dir/flags.make
+CMakeFiles/soundy.dir/mainwindow.cpp.o: ../mainwindow.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/abo0ody/workspace/opencv/portaudio/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/soundy.dir/mainwindow.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/soundy.dir/mainwindow.cpp.o -c /home/abo0ody/workspace/opencv/portaudio/mainwindow.cpp
+
+CMakeFiles/soundy.dir/mainwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/soundy.dir/mainwindow.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/abo0ody/workspace/opencv/portaudio/mainwindow.cpp > CMakeFiles/soundy.dir/mainwindow.cpp.i
+
+CMakeFiles/soundy.dir/mainwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/soundy.dir/mainwindow.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/abo0ody/workspace/opencv/portaudio/mainwindow.cpp -o CMakeFiles/soundy.dir/mainwindow.cpp.s
+
+CMakeFiles/soundy.dir/mainwindow.cpp.o.requires:
+.PHONY : CMakeFiles/soundy.dir/mainwindow.cpp.o.requires
+
+CMakeFiles/soundy.dir/mainwindow.cpp.o.provides: CMakeFiles/soundy.dir/mainwindow.cpp.o.requires
+	$(MAKE) -f CMakeFiles/soundy.dir/build.make CMakeFiles/soundy.dir/mainwindow.cpp.o.provides.build
+.PHONY : CMakeFiles/soundy.dir/mainwindow.cpp.o.provides
+
+CMakeFiles/soundy.dir/mainwindow.cpp.o.provides.build: CMakeFiles/soundy.dir/mainwindow.cpp.o
+
+CMakeFiles/soundy.dir/configwindow.cpp.o: CMakeFiles/soundy.dir/flags.make
+CMakeFiles/soundy.dir/configwindow.cpp.o: ../configwindow.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/abo0ody/workspace/opencv/portaudio/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/soundy.dir/configwindow.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/soundy.dir/configwindow.cpp.o -c /home/abo0ody/workspace/opencv/portaudio/configwindow.cpp
+
+CMakeFiles/soundy.dir/configwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/soundy.dir/configwindow.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/abo0ody/workspace/opencv/portaudio/configwindow.cpp > CMakeFiles/soundy.dir/configwindow.cpp.i
+
+CMakeFiles/soundy.dir/configwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/soundy.dir/configwindow.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/abo0ody/workspace/opencv/portaudio/configwindow.cpp -o CMakeFiles/soundy.dir/configwindow.cpp.s
+
+CMakeFiles/soundy.dir/configwindow.cpp.o.requires:
+.PHONY : CMakeFiles/soundy.dir/configwindow.cpp.o.requires
+
+CMakeFiles/soundy.dir/configwindow.cpp.o.provides: CMakeFiles/soundy.dir/configwindow.cpp.o.requires
+	$(MAKE) -f CMakeFiles/soundy.dir/build.make CMakeFiles/soundy.dir/configwindow.cpp.o.provides.build
+.PHONY : CMakeFiles/soundy.dir/configwindow.cpp.o.provides
+
+CMakeFiles/soundy.dir/configwindow.cpp.o.provides.build: CMakeFiles/soundy.dir/configwindow.cpp.o
+
+CMakeFiles/soundy.dir/configuration.cpp.o: CMakeFiles/soundy.dir/flags.make
+CMakeFiles/soundy.dir/configuration.cpp.o: ../configuration.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/abo0ody/workspace/opencv/portaudio/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/soundy.dir/configuration.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/soundy.dir/configuration.cpp.o -c /home/abo0ody/workspace/opencv/portaudio/configuration.cpp
+
+CMakeFiles/soundy.dir/configuration.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/soundy.dir/configuration.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/abo0ody/workspace/opencv/portaudio/configuration.cpp > CMakeFiles/soundy.dir/configuration.cpp.i
+
+CMakeFiles/soundy.dir/configuration.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/soundy.dir/configuration.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/abo0ody/workspace/opencv/portaudio/configuration.cpp -o CMakeFiles/soundy.dir/configuration.cpp.s
+
+CMakeFiles/soundy.dir/configuration.cpp.o.requires:
+.PHONY : CMakeFiles/soundy.dir/configuration.cpp.o.requires
+
+CMakeFiles/soundy.dir/configuration.cpp.o.provides: CMakeFiles/soundy.dir/configuration.cpp.o.requires
+	$(MAKE) -f CMakeFiles/soundy.dir/build.make CMakeFiles/soundy.dir/configuration.cpp.o.provides.build
+.PHONY : CMakeFiles/soundy.dir/configuration.cpp.o.provides
+
+CMakeFiles/soundy.dir/configuration.cpp.o.provides.build: CMakeFiles/soundy.dir/configuration.cpp.o
+
 # Object files for target soundy
 soundy_OBJECTS = \
 "CMakeFiles/soundy.dir/app.cpp.o" \
 "CMakeFiles/soundy.dir/audio.cpp.o" \
-"CMakeFiles/soundy.dir/colortracker.cpp.o"
+"CMakeFiles/soundy.dir/colortracker.cpp.o" \
+"CMakeFiles/soundy.dir/mainwindow.cpp.o" \
+"CMakeFiles/soundy.dir/configwindow.cpp.o" \
+"CMakeFiles/soundy.dir/configuration.cpp.o"
 
 # External object files for target soundy
 soundy_EXTERNAL_OBJECTS =
@@ -133,6 +205,9 @@ soundy_EXTERNAL_OBJECTS =
 soundy: CMakeFiles/soundy.dir/app.cpp.o
 soundy: CMakeFiles/soundy.dir/audio.cpp.o
 soundy: CMakeFiles/soundy.dir/colortracker.cpp.o
+soundy: CMakeFiles/soundy.dir/mainwindow.cpp.o
+soundy: CMakeFiles/soundy.dir/configwindow.cpp.o
+soundy: CMakeFiles/soundy.dir/configuration.cpp.o
 soundy: CMakeFiles/soundy.dir/build.make
 soundy: /usr/local/lib/libopencv_calib3d.so
 soundy: /usr/local/lib/libopencv_contrib.so
@@ -164,6 +239,9 @@ CMakeFiles/soundy.dir/build: soundy
 CMakeFiles/soundy.dir/requires: CMakeFiles/soundy.dir/app.cpp.o.requires
 CMakeFiles/soundy.dir/requires: CMakeFiles/soundy.dir/audio.cpp.o.requires
 CMakeFiles/soundy.dir/requires: CMakeFiles/soundy.dir/colortracker.cpp.o.requires
+CMakeFiles/soundy.dir/requires: CMakeFiles/soundy.dir/mainwindow.cpp.o.requires
+CMakeFiles/soundy.dir/requires: CMakeFiles/soundy.dir/configwindow.cpp.o.requires
+CMakeFiles/soundy.dir/requires: CMakeFiles/soundy.dir/configuration.cpp.o.requires
 .PHONY : CMakeFiles/soundy.dir/requires
 
 CMakeFiles/soundy.dir/clean:

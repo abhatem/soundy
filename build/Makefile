@@ -60,6 +60,47 @@ edit_cache:
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/local/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/local/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: install/local
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/local/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+.PHONY : install/strip/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -266,6 +307,78 @@ colortracker.cpp.s:
 	$(MAKE) -f CMakeFiles/soundy.dir/build.make CMakeFiles/soundy.dir/colortracker.cpp.s
 .PHONY : colortracker.cpp.s
 
+configuration.o: configuration.cpp.o
+.PHONY : configuration.o
+
+# target to build an object file
+configuration.cpp.o:
+	$(MAKE) -f CMakeFiles/soundy.dir/build.make CMakeFiles/soundy.dir/configuration.cpp.o
+.PHONY : configuration.cpp.o
+
+configuration.i: configuration.cpp.i
+.PHONY : configuration.i
+
+# target to preprocess a source file
+configuration.cpp.i:
+	$(MAKE) -f CMakeFiles/soundy.dir/build.make CMakeFiles/soundy.dir/configuration.cpp.i
+.PHONY : configuration.cpp.i
+
+configuration.s: configuration.cpp.s
+.PHONY : configuration.s
+
+# target to generate assembly for a file
+configuration.cpp.s:
+	$(MAKE) -f CMakeFiles/soundy.dir/build.make CMakeFiles/soundy.dir/configuration.cpp.s
+.PHONY : configuration.cpp.s
+
+configwindow.o: configwindow.cpp.o
+.PHONY : configwindow.o
+
+# target to build an object file
+configwindow.cpp.o:
+	$(MAKE) -f CMakeFiles/soundy.dir/build.make CMakeFiles/soundy.dir/configwindow.cpp.o
+.PHONY : configwindow.cpp.o
+
+configwindow.i: configwindow.cpp.i
+.PHONY : configwindow.i
+
+# target to preprocess a source file
+configwindow.cpp.i:
+	$(MAKE) -f CMakeFiles/soundy.dir/build.make CMakeFiles/soundy.dir/configwindow.cpp.i
+.PHONY : configwindow.cpp.i
+
+configwindow.s: configwindow.cpp.s
+.PHONY : configwindow.s
+
+# target to generate assembly for a file
+configwindow.cpp.s:
+	$(MAKE) -f CMakeFiles/soundy.dir/build.make CMakeFiles/soundy.dir/configwindow.cpp.s
+.PHONY : configwindow.cpp.s
+
+mainwindow.o: mainwindow.cpp.o
+.PHONY : mainwindow.o
+
+# target to build an object file
+mainwindow.cpp.o:
+	$(MAKE) -f CMakeFiles/soundy.dir/build.make CMakeFiles/soundy.dir/mainwindow.cpp.o
+.PHONY : mainwindow.cpp.o
+
+mainwindow.i: mainwindow.cpp.i
+.PHONY : mainwindow.i
+
+# target to preprocess a source file
+mainwindow.cpp.i:
+	$(MAKE) -f CMakeFiles/soundy.dir/build.make CMakeFiles/soundy.dir/mainwindow.cpp.i
+.PHONY : mainwindow.cpp.i
+
+mainwindow.s: mainwindow.cpp.s
+.PHONY : mainwindow.s
+
+# target to generate assembly for a file
+mainwindow.cpp.s:
+	$(MAKE) -f CMakeFiles/soundy.dir/build.make CMakeFiles/soundy.dir/mainwindow.cpp.s
+.PHONY : mainwindow.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -275,6 +388,10 @@ help:
 	@echo "... TestAudio"
 	@echo "... TestColorTracker"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... soundy"
 	@echo "... TestAudio.o"
@@ -292,6 +409,15 @@ help:
 	@echo "... colortracker.o"
 	@echo "... colortracker.i"
 	@echo "... colortracker.s"
+	@echo "... configuration.o"
+	@echo "... configuration.i"
+	@echo "... configuration.s"
+	@echo "... configwindow.o"
+	@echo "... configwindow.i"
+	@echo "... configwindow.s"
+	@echo "... mainwindow.o"
+	@echo "... mainwindow.i"
+	@echo "... mainwindow.s"
 .PHONY : help
 
 

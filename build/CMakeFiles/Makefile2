@@ -132,7 +132,7 @@ clean: CMakeFiles/TestColorTracker.dir/clean
 CMakeFiles/soundy.dir/all:
 	$(MAKE) -f CMakeFiles/soundy.dir/build.make CMakeFiles/soundy.dir/depend
 	$(MAKE) -f CMakeFiles/soundy.dir/build.make CMakeFiles/soundy.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/abo0ody/workspace/opencv/portaudio/build/CMakeFiles  5 6 7
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/abo0ody/workspace/opencv/portaudio/build/CMakeFiles  5 6 7 8 9 10
 	@echo "Built target soundy"
 .PHONY : CMakeFiles/soundy.dir/all
 
@@ -142,7 +142,7 @@ all: CMakeFiles/soundy.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/soundy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/abo0ody/workspace/opencv/portaudio/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abo0ody/workspace/opencv/portaudio/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/soundy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/abo0ody/workspace/opencv/portaudio/build/CMakeFiles 0
 .PHONY : CMakeFiles/soundy.dir/rule

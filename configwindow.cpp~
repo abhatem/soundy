@@ -1,0 +1,73 @@
+#include "configwindow.h"
+
+using namespace cv;
+using namespace soundy::Config;
+//void soundy::GUI::configWindow::configWindow()
+
+void lowHueCallback(int, void*);
+void highHueCallback(int, void*);
+void lowSaturationCallback(int, void*);
+void highSaturationCallback(int, void*);
+void lowValueCallback(int, void*);
+void highValueCallback(int, void*);
+
+void soundy::GUI::configWindow::show()
+{
+  namedWindow(_window_name);
+  
+  createTrackbar(_trackbar_lowH, _window_name, &cp.lowH, MAX_HUE,
+		 lowHueCallback);
+  createTrackbar(_trackbar_highH, _window_name, &cp.highH, MAX_HUE,
+		 highHueCallback);
+  
+  createTrackbar(_trackbar_lowS, _window_name, &cp.lowS,
+		 MAX_SATURATION, lowSaturationCallback);
+  createTrackbar(_trackbar_highS, _window_name, &cp.highS,
+		 MAX_SATURATION, highSaturationCallback);
+
+  createTrackbar(_trackbar_lowV, _window_name, &cp.lowV,
+		 MAX_VALUE, lowValueCallback);
+  createTrackbar(_trackbar_highV, _window_name, &cp.highV,
+		 MAX_VALUE, highValueCallback);
+
+}
+
+void lowHueCallback(int, void*)
+{
+  sColorTracker::Instance()->setLowH(cp.lowH);
+}
+
+void highHueCallback(int, void*)
+{
+  sColorTracker::Instance()->setHighH(cp.highH);
+}
+
+void lowSaturationCallback(int, void*)
+{
+  sColorTracker::Instance()->setLowS(cp.lowS);
+}
+
+void highSaturationCallback(int, void*)
+{
+  sColorTracker::Instance()->setHighS(cp.highS);
+}
+
+void lowValueCallback(int, void*)
+{
+  sColorTracker::Instance()->setLowV(cp.lowV);
+}
+
+void highValueCallback(int, void*)
+{
+  sColorTracker::Instance()->setHighV(cp.highV);
+}
+
+
+
+
+
+
+
+
+
+

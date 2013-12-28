@@ -43,7 +43,9 @@ void soundy::VP::ColorTracker::trackObject(Mat imgThresh)
 }
 
 soundy::VP::ColorTracker::ColorTracker() :
-  _lowH(0), _highH(180), _lowS(0), _highS(255), _lowV(0), _highV(255), _posX(0), _posY(0), _lastX(0), _lastY(0)
+  _lastX(0), _lastY(0), _posX(0), _posY(0), _lowH(0), _highH(0), _lowS(0), _highS(255), _lowV(0), _highV(255), _error(0)
+  /*  _lowH(0), _highH(180), _lowS(0), _highS(255), _lowV(0), _highV(255), _posX(0), _posY(0), _lastX(0), _lastY(0)
+   */
 {
   _capture.open(0);
   if(!_capture.isOpened()){
@@ -53,7 +55,7 @@ soundy::VP::ColorTracker::ColorTracker() :
 }
 
 soundy::VP::ColorTracker::ColorTracker(int lowH, int highH, int lowS, int highS, int lowV, int highV) :
-  _lowH(lowH), _highH(highH), _lowS(lowS), _highS(highS), _lowV(lowV), _highV(highV), _error(0), _posX(0), _posY(0), _lastX(0), _lastY(0)
+  _lastX(0), _lastY(0), _posX(0), _posY(0), _lowH(lowH), _highH(highH), _lowS(lowS), _highS(highS), _lowV(lowV), _highV(highV), _error(0)
 {
   _capture.open(0);
   if(!_capture.isOpened()){
@@ -92,7 +94,7 @@ Point soundy::VP::ColorTracker::ColorPos()
       map_y.at<float>(j, i) = j;
     }
   }
-
+  //remap(InputArray src, OutputArray dst, InputArray map1, InputArray map2, int interpolation
   remap(_frame, _frame, map_x, map_y, CV_INTER_LINEAR, BORDER_CONSTANT, Scalar(0, 0, 0));
 
   GaussianBlur(_frame, _frame, Size(3, 3), 0, 0, BORDER_DEFAULT);

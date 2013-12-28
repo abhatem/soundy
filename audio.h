@@ -1,3 +1,6 @@
+#ifndef AUDIO_H
+#define AUDIO_H
+
 #include "soundy.h"
 
 class soundy::Sound::audio {
@@ -11,10 +14,10 @@ class soundy::Sound::audio {
   void stopSound();
   void initSound();
   // getters
-  paData data() {return _data;}
-  PaStreamParameters outputParameters() { return _outputParameters; }
-  PaStream* stream() { return _stream; }
-  PaError err() { return _err; }
+  paData data() const {return _data;}
+  PaStreamParameters outputParameters() const { return _outputParameters; }
+  PaStream* stream() const { return _stream; }
+  PaError err() const { return _err; }
   
   // setters
   void setData(paData data) { _data = data; }
@@ -22,10 +25,16 @@ class soundy::Sound::audio {
   { _outputParameters = outputParameters; }
   
   void setStream(PaStream *stream) { _stream = stream; }
+  
+  //static int left_increment;
+  //static int right_increment;
+  
  private:
   void reportError();
-  paData _data;
+  soundy::Sound::paData _data;
   PaStreamParameters _outputParameters;
   PaStream *_stream;
   PaError _err;
 };
+
+#endif // AUDIO_H

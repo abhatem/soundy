@@ -2,6 +2,9 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/soundy.dir/app.cpp.o"
   "CMakeFiles/soundy.dir/audio.cpp.o"
   "CMakeFiles/soundy.dir/colortracker.cpp.o"
+  "CMakeFiles/soundy.dir/mainwindow.cpp.o"
+  "CMakeFiles/soundy.dir/configwindow.cpp.o"
+  "CMakeFiles/soundy.dir/configuration.cpp.o"
   "soundy.pdb"
   "soundy"
 )

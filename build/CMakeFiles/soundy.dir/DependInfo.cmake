@@ -7,6 +7,9 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/abo0ody/workspace/opencv/portaudio/app.cpp" "/home/abo0ody/workspace/opencv/portaudio/build/CMakeFiles/soundy.dir/app.cpp.o"
   "/home/abo0ody/workspace/opencv/portaudio/audio.cpp" "/home/abo0ody/workspace/opencv/portaudio/build/CMakeFiles/soundy.dir/audio.cpp.o"
   "/home/abo0ody/workspace/opencv/portaudio/colortracker.cpp" "/home/abo0ody/workspace/opencv/portaudio/build/CMakeFiles/soundy.dir/colortracker.cpp.o"
+  "/home/abo0ody/workspace/opencv/portaudio/configuration.cpp" "/home/abo0ody/workspace/opencv/portaudio/build/CMakeFiles/soundy.dir/configuration.cpp.o"
+  "/home/abo0ody/workspace/opencv/portaudio/configwindow.cpp" "/home/abo0ody/workspace/opencv/portaudio/build/CMakeFiles/soundy.dir/configwindow.cpp.o"
+  "/home/abo0ody/workspace/opencv/portaudio/mainwindow.cpp" "/home/abo0ody/workspace/opencv/portaudio/build/CMakeFiles/soundy.dir/mainwindow.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

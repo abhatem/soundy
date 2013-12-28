@@ -6,25 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/home/abo0ody/workspace/opencv/portaudio/app.cpp
-iostream
--
-soundy.h
-/home/abo0ody/workspace/opencv/portaudio/soundy.h
-audio.h
-/home/abo0ody/workspace/opencv/portaudio/audio.h
-colortracker.h
-/home/abo0ody/workspace/opencv/portaudio/colortracker.h
-
-/home/abo0ody/workspace/opencv/portaudio/audio.h
-soundy.h
-/home/abo0ody/workspace/opencv/portaudio/soundy.h
-
 /home/abo0ody/workspace/opencv/portaudio/colortracker.h
 soundy.h
 /home/abo0ody/workspace/opencv/portaudio/soundy.h
 
 /home/abo0ody/workspace/opencv/portaudio/config.h
+
+/home/abo0ody/workspace/opencv/portaudio/configuration.h
+soundy.h
+/home/abo0ody/workspace/opencv/portaudio/soundy.h
+fstream
+-
+
+/home/abo0ody/workspace/opencv/portaudio/configwindow.cpp
+configwindow.h
+/home/abo0ody/workspace/opencv/portaudio/configwindow.h
+
+/home/abo0ody/workspace/opencv/portaudio/configwindow.h
+soundy.h
+/home/abo0ody/workspace/opencv/portaudio/soundy.h
+colortracker.h
+/home/abo0ody/workspace/opencv/portaudio/colortracker.h
+configuration.h
+/home/abo0ody/workspace/opencv/portaudio/configuration.h
+string
+-
 
 /home/abo0ody/workspace/opencv/portaudio/singleton.hpp
 soundy.h
